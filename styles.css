@@ -1,55 +1,89 @@
 :root {
-  --shadow: 0.1vw 0.1vw 0 rgb(0, 0, 0), 0.2vw 0.2vw 0 rgb(0, 0, 0),
-    0.3vw 0.3vw 0 rgb(0, 0, 0), 0.4vw 0.4vw 0 rgb(0, 0, 0),
-    0.5vw 0.5vw 0 rgb(0, 0, 0), 0.6vw 0.6vw 0 rgb(0, 0, 0),
-    0.7vw 0.7vw 0 rgb(0, 0, 0), 0.8vw 0.8vw 0 rgb(0, 0, 0),
-    0.9vw 0.9vw 0 rgb(0, 0, 0), 1vw 1vw 0 rgb(0, 0, 0),
-    1.1vw 1.1vw 0 rgb(0, 0, 0), 1.2vw 1.2vw 0 rgb(0, 0, 0),
-    1.3vw 1.3vw 0 rgb(0, 0, 0), 1.4vw 1.4vw 0 rgb(0, 0, 0),
-    1.5vw 1.5vw 0 rgb(0, 0, 0), 1.6vw 1.6vw 0 rgb(0, 0, 0),
-    1.7vw 1.7vw 0 rgb(0, 0, 0), 1.8vw 1.8vw 0 rgb(0, 0, 0),
-    1.9vw 1.9vw 0 rgb(0, 0, 0), 2vw 2vw 0 rgb(0, 0, 0),
-    2.1vw 2.1vw 0 rgb(0, 0, 0), 2.2vw 2.2vw 0 rgb(0, 0, 0);
+  --shadow-reverse: -0.05vw -0.05vw rgb(242, 113, 244),
+    -0.1vw -0.1vw rgb(1, -128, 3), -0.15vw -0.15vw rgb(6, -123, 8),
+    -0.2vw -0.2vw rgb(12, -117, 14), -0.25vw -0.25vw rgb(18, -111, 20),
+    -0.3vw -0.3vw rgb(24, -105, 26), -0.35vw -0.35vw rgb(30, -99, 32),
+    -0.4vw -0.4vw rgb(35, -94, 37), -0.45vw -0.45vw rgb(41, -88, 43),
+    -0.5vw -0.5vw rgb(47, -82, 49), -0.55vw -0.55vw rgb(53, -76, 55),
+    -0.6vw -0.6vw rgb(59, -70, 61), -0.65vw -0.65vw rgb(64, -65, 66),
+    -0.7vw -0.7vw rgb(70, -59, 72), -0.75vw -0.75vw rgb(76, -53, 78),
+    -0.8vw -0.8vw rgb(82, -47, 84), -0.85vw -0.85vw rgb(88, -41, 90),
+    -0.9vw -0.9vw rgb(93, -36, 95), -0.95vw -0.95vw rgb(99, -30, 101),
+    -1vw -1vw rgb(105, -24, 107), -1.05vw -1.05vw rgb(111, -18, 113),
+    -1.1vw -1.1vw rgb(117, -12, 119), -1.15vw -1.15vw rgb(122, -7, 124),
+    -1.2vw -1.2vw rgb(128, -1, 130), -1.25vw -1.25vw rgb(134, 5, 136),
+    -1.3vw -1.3vw rgb(140, 11, 142), -1.35vw -1.35vw rgb(145, 16, 147),
+    -1.4vw -1.4vw rgb(151, 22, 153), -1.45vw -1.45vw rgb(157, 28, 159),
+    -1.5vw -1.5vw rgb(163, 34, 165), -1.55vw -1.55vw rgb(169, 40, 171),
+    -1.6vw -1.6vw rgb(174, 45, 176), -1.65vw -1.65vw rgb(180, 51, 182),
+    -1.7vw -1.7vw rgb(186, 57, 188), -1.75vw -1.75vw rgb(192, 63, 194),
+    -1.8vw -1.8vw rgb(198, 69, 200), -1.85vw -1.85vw rgb(203, 74, 205),
+    -1.9vw -1.9vw rgb(203, 74, 205), -1.95vw -1.95vw rgb(209, 80, 211),
+    -2vw -2vw rgb(215, 86, 217), -2.05vw -2.05vw rgb(221, 92, 223),
+    -2.1vw -2.1vw rgb(227, 98, 229), -2.15vw -2.15vw rgb(232, 103, 234),
+    -2.2vw -2.2vw rgb(238, 109, 240);
+  --shadow: 0.05vw 0.05vw rgb(242, 113, 244), 0.1vw 0.1vw rgb(1, -128, 3),
+    0.15vw 0.15vw rgb(6, -123, 8), 0.2vw 0.2vw rgb(12, -117, 14),
+    0.25vw 0.25vw rgb(18, -111, 20), 0.3vw 0.3vw rgb(24, -105, 26),
+    0.35vw 0.35vw rgb(30, -99, 32), 0.4vw 0.4vw rgb(35, -94, 37),
+    0.45vw 0.45vw rgb(41, -88, 43), 0.5vw 0.5vw rgb(47, -82, 49),
+    0.55vw 0.55vw rgb(53, -76, 55), 0.6vw 0.6vw rgb(59, -70, 61),
+    0.65vw 0.65vw rgb(64, -65, 66), 0.7vw 0.7vw rgb(70, -59, 72),
+    0.75vw 0.75vw rgb(76, -53, 78), 0.8vw 0.8vw rgb(82, -47, 84),
+    0.85vw 0.85vw rgb(88, -41, 90), 0.9vw 0.9vw rgb(93, -36, 95),
+    0.95vw 0.95vw rgb(99, -30, 101), 1vw 1vw rgb(105, -24, 107),
+    1.05vw 1.05vw rgb(111, -18, 113), 1.1vw 1.1vw rgb(117, -12, 119),
+    1.15vw 1.15vw rgb(122, -7, 124), 1.2vw 1.2vw rgb(128, -1, 130),
+    1.25vw 1.25vw rgb(134, 5, 136), 1.3vw 1.3vw rgb(140, 11, 142),
+    1.35vw 1.35vw rgb(145, 16, 147), 1.4vw 1.4vw rgb(151, 22, 153),
+    1.45vw 1.45vw rgb(157, 28, 159), 1.5vw 1.5vw rgb(163, 34, 165),
+    1.55vw 1.55vw rgb(169, 40, 171), 1.6vw 1.6vw rgb(174, 45, 176),
+    1.65vw 1.65vw rgb(180, 51, 182), 1.7vw 1.7vw rgb(186, 57, 188),
+    1.75vw 1.75vw rgb(192, 63, 194), 1.8vw 1.8vw rgb(198, 69, 200),
+    1.85vw 1.85vw rgb(203, 74, 205), 1.9vw 1.9vw rgb(203, 74, 205),
+    1.95vw 1.95vw rgb(209, 80, 211), 2vw 2vw rgb(215, 86, 217),
+    2.05vw 2.05vw rgb(221, 92, 223), 2.1vw 2.1vw rgb(227, 98, 229),
+    2.15vw 2.15vw rgb(232, 103, 234), 2.2vw 2.2vw rgb(238, 109, 240);
+  --black-shadow: 0.05vw 0.05vw black, 0.1vw 0.1vw black, 0.15vw 0.15vw black,
+    0.2vw 0.2vw black, 0.25vw 0.25vw black, 0.3vw 0.3vw black,
+    0.35vw 0.35vw black, 0.4vw 0.4vw black, 0.45vw 0.45vw black,
+    0.5vw 0.5vw black, 0.55vw 0.55vw black, 0.6vw 0.6vw black,
+    0.65vw 0.65vw black, 0.7vw 0.7vw black, 0.75vw 0.75vw black,
+    0.8vw 0.8vw black, 0.85vw 0.85vw black, 0.9vw 0.9vw black,
+    0.95vw 0.95vw black, 1vw 1vw black, 1.05vw 1.05vw black, 1.1vw 1.1vw black,
+    1.15vw 1.15vw black, 1.2vw 1.2vw black, 1.25vw 1.25vw black,
+    1.3vw 1.3vw black, 1.35vw 1.35vw black, 1.4vw 1.4vw black,
+    1.45vw 1.45vw black, 1.5vw 1.5vw black, 1.55vw 1.55vw black,
+    1.6vw 1.6vw black, 1.65vw 1.65vw black, 1.7vw 1.7vw black,
+    1.75vw 1.75vw black, 1.8vw 1.8vw black, 1.85vw 1.85vw black,
+    1.9vw 1.9vw black, 1.95vw 1.95vw black, 2vw 2vw black, 2.05vw 2.05vw black,
+    2.1vw 2.1vw black, 2.15vw 2.15vw black, 2.2vw 2.2vw black;
   --pink: #f473f6;
   --grey: #e5e5e5;
-  --font: "DM Sans", sans-serif;
+  --font: "DMSans", sans-serif;
   --logo-font: EuclidCircularB-Bold-WebTrial, "DM Sans", sans-serif;
   --border-radius: 5vw;
-  --text-shadow-animation: textShadowBounce 10s ease-in-out infinite;
-  --box-shadow-animation: boxShadowBounce 10s infinite ease-in-out;
-}
-
-:root {
-  --shadow: 0.1vw 0.1vw 0 rgb(0, 0, 0), 0.2vw 0.2vw 0 rgb(0, 0, 0),
-    0.3vw 0.3vw 0 rgb(0, 0, 0), 0.4vw 0.4vw 0 rgb(0, 0, 0),
-    0.5vw 0.5vw 0 rgb(0, 0, 0), 0.6vw 0.6vw 0 rgb(0, 0, 0),
-    0.7vw 0.7vw 0 rgb(0, 0, 0), 0.8vw 0.8vw 0 rgb(0, 0, 0),
-    0.9vw 0.9vw 0 rgb(0, 0, 0), 1vw 1vw 0 rgb(0, 0, 0),
-    1.1vw 1.1vw 0 rgb(0, 0, 0), 1.2vw 1.2vw 0 rgb(0, 0, 0),
-    1.3vw 1.3vw 0 rgb(0, 0, 0), 1.4vw 1.4vw 0 rgb(0, 0, 0),
-    1.5vw 1.5vw 0 rgb(0, 0, 0), 1.6vw 1.6vw 0 rgb(0, 0, 0),
-    1.7vw 1.7vw 0 rgb(0, 0, 0), 1.8vw 1.8vw 0 rgb(0, 0, 0),
-    1.9vw 1.9vw 0 rgb(0, 0, 0), 2vw 2vw 0 rgb(0, 0, 0),
-    2.1vw 2.1vw 0 rgb(0, 0, 0), 2.2vw 2.2vw 0 rgb(0, 0, 0);
-}
-
-:root {
-  --shadow-reverse: -0.1vw -0.1vw 0 rgb(0, 0, 0), -0.2vw -0.2vw 0 rgb(0, 0, 0),
-    -0.3vw -0.3vw 0 rgb(0, 0, 0), -0.4vw -0.4vw 0 rgb(0, 0, 0),
-    -0.5vw -0.5vw 0 rgb(0, 0, 0), -0.6vw -0.6vw 0 rgb(0, 0, 0),
-    -0.7vw -0.7vw 0 rgb(0, 0, 0), -0.8vw -0.8vw 0 rgb(0, 0, 0),
-    -0.9vw -0.9vw 0 rgb(0, 0, 0), -1vw -1vw 0 rgb(0, 0, 0),
-    -1.1vw -1.1vw 0 rgb(0, 0, 0), -1.2vw -1.2vw 0 rgb(0, 0, 0),
-    -1.3vw -1.3vw 0 rgb(0, 0, 0), -1.4vw -1.4vw 0 rgb(0, 0, 0),
-    -1.5vw -1.5vw 0 rgb(0, 0, 0), -1.6vw -1.6vw 0 rgb(0, 0, 0),
-    -1.7vw -1.7vw 0 rgb(0, 0, 0), -1.8vw -1.8vw 0 rgb(0, 0, 0),
-    -1.9vw -1.9vw 0 rgb(0, 0, 0), -2vw -2vw 0 rgb(0, 0, 0),
-    -2.1vw -2.1vw 0 rgb(0, 0, 0), -2.2vw -2.2vw 0 rgb(0, 0, 0);
+  --text-shadow-animation: textShadowBounce 10s infinite
+    cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
 @font-face {
   font-family: EuclidCircularB-Bold-WebTrial;
   src: url(assets/EuclidCircularB-Bold-WebTrial.woff) format("woff");
+}
+
+@font-face {
+  font-family: DMSans;
+  src: url(assets/DMSans-Medium.woff) format("woff");
+}
+
+::-moz-selection {
+  background: rgba(244, 115, 246, 0.5);
+  color: black;
+}
+::selection {
+  background: rgba(244, 115, 246, 0.5);
+  color: black;
 }
 
 body {
@@ -72,41 +106,29 @@ body {
 
 h1 {
   color: var(--pink);
-  margin: 0 0 5vw 0;
+  margin: 3vw 0 4vw 0;
   font-family: var(--logo-font);
   font-size: 20vw;
-  text-shadow: var(--shadow);
+  text-shadow: var(--black-shadow);
   line-height: 15vw;
   animation: var(--text-shadow-animation);
 }
 
 @keyframes textShadowBounce {
   0% {
-    text-shadow: var(--shadow);
+    text-shadow: var(--black-shadow);
   }
-  5% {
+  80% {
+    text-shadow: var(--black-shadow);
+  }
+  83% {
     text-shadow: var(--shadow-reverse);
   }
-  10% {
-    text-shadow: var(--shadow);
+  86% {
+    text-shadow: var(--black-shadow);
   }
   100% {
-    text-shadow: var(--shadow);
-  }
-}
-
-@keyframes boxShadowBounce {
-  0% {
-    box-shadow: var(--shadow);
-  }
-  5% {
-    box-shadow: var(--shadow-reverse);
-  }
-  10% {
-    box-shadow: var(--shadow);
-  }
-  100% {
-    box-shadow: var(--shadow);
+    text-shadow: var(--black-shadow);
   }
 }
 
@@ -116,40 +138,50 @@ h1:hover {
 
 h2 {
   font-size: 3vw;
+  font-family: var(--logo-font);
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: 2vw;
+  font-family: var(--logo-font);
+  margin: 0;
+}
+
+.small {
+  font-size: 1vw;
+  letter-spacing: 0.1vw;
+  padding: 1vw 0 0 0;
+  text-transform: uppercase;
 }
 
 p {
-  font-size: 1.5rem;
+  font-size: 1.5vw;
   font-family: var(--font);
-  margin: 5vw 0;
+  margin: 3vw 0;
 }
 
 #container {
-  width: 60vw;
-  /* margin: 10vw 0; */
-  /* background-color: var(--grey); */
-  /* box-shadow: 0 0 5vw 5vw var(--grey); */
+  width: 80vw;
   border-radius: var(--border-radius);
-  padding: 5vw;
   display: flex;
 }
 
 .block {
-  width: 33%;
 }
 
 .tagline {
   padding: 2vw 3.5vw;
-  background-color: var(--pink);
-  box-shadow: var(--shadow);
   color: black;
   font-family: var(--logo-font);
-  border-radius: var(--border-radius);
-  animation: var(--box-shadow-animation);
+}
+
+.color-block {
+  width: 100%;
+  height: 4vw;
+  background-color: fuchsia;
+  position: relative;
+  top: -4vw;
+  mix-blend-mode: hue;
 }
 
 @keyframes rotate {
@@ -161,14 +193,18 @@ p {
   }
 }
 
-.rotating-circle {
+.rotating-quote {
   background-color: var(--pink);
-  /* box-shadow: 0 0 5vw 5vw var(--pink); */
   border-radius: 100%;
   padding: 5vw;
   color: var(--grey);
   animation: rotate 5s infinite linear;
+  margin: 5vw;
+}
+
+.rotating-quote p {
   font-family: var(--logo-font);
+  margin: 0;
 }
 
 @media screen and (max-width: 600px) {
@@ -179,5 +215,18 @@ p {
 
   .block {
     width: 100%;
+  }
+
+  h3 {
+    font-size: 5vw;
+  }
+
+  .color-block {
+    top: -6vw;
+    height: 6vw;
+  }
+
+  p {
+    font-size: 3vw;
   }
 }
