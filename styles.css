@@ -63,8 +63,7 @@
   --font: "DMSans", sans-serif;
   --logo-font: EuclidCircularB-Bold-WebTrial, "DM Sans", sans-serif;
   --border-radius: 5vw;
-  --text-shadow-animation: textShadowBounce 10s infinite
-    cubic-bezier(0.34, 1.56, 0.64, 1);
+  --text-shadow-animation: textShadowBounce 15s infinite;
 }
 
 @font-face {
@@ -87,15 +86,17 @@
 }
 
 body {
+  cursor: default;
   align-items: center;
-  background: linear-gradient(
+  background: /*linear-gradient(
       0deg,
       rgba(229, 229, 229, 0) 0%,
       rgba(229, 229, 229, 1) 33%,
       rgba(229, 229, 229, 1) 66%,
       rgba(229, 229, 229, 0) 100%
-    ),
-    url(assets/bg.gif) repeat 0 0 / 100%, var(--grey);
+    ), */ url(assets/bg.gif)
+      no-repeat 0 0 / 100%,
+    var(--grey);
   display: flex;
   flex-direction: column;
   font-family: var(--font);
@@ -117,14 +118,15 @@ h1 {
 @keyframes textShadowBounce {
   0% {
     text-shadow: var(--black-shadow);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 2);
   }
-  80% {
-    text-shadow: var(--black-shadow);
-  }
-  83% {
+  3% {
     text-shadow: var(--shadow-reverse);
   }
-  86% {
+  6% {
+    text-shadow: var(--black-shadow);
+  }
+  9% {
     text-shadow: var(--black-shadow);
   }
   100% {
@@ -132,12 +134,8 @@ h1 {
   }
 }
 
-h1:hover {
-  text-shadow: 0vw 0vw rgb(0, 0, 0);
-}
-
 h2 {
-  font-size: 3vw;
+  font-size: 3.5vw;
   font-family: var(--logo-font);
 }
 
@@ -178,7 +176,7 @@ p {
 .color-block {
   width: 100%;
   height: 4vw;
-  background-color: fuchsia;
+  background-color: var(--pink);
   position: relative;
   top: -4vw;
   mix-blend-mode: hue;
