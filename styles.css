@@ -6,7 +6,7 @@
 
 @font-face {
   font-family: "Euclid Circular B Regular";
-  src: url(assets/euclidCircularBMedium.woff) format("woff");
+  src: url(assets/euclidCircularBRegular.woff) format("woff");
   font-weight: normal;
 }
 
@@ -136,6 +136,7 @@ h3 {
   font-size: 2vw;
   font-family: var(--font);
   margin: 0;
+  height: 4vw;
 }
 
 .small {
@@ -148,26 +149,37 @@ h3 {
 p {
   font-size: 1.5vw;
   font-family: var(--font);
-  margin: 3vw 0;
+  margin: 1vw 0 2vw;
 }
 
 #container {
   width: 80vw;
-  /* border-radius: var(--border-radius); */
   display: flex;
   flex-wrap: wrap;
 }
 
+#intro {
+  width: 68vw;
+  margin: 0 auto 3vw;
+}
+
+#intro p {
+  font-size: 2vw;
+  margin-top: 0;
+}
+
 .block {
   width: 31.3%;
-  padding: 0 1%;
+  padding: 1% 1%;
+  margin-top: 2vw;
   display: inline-block;
 }
 
 .tagline {
-  padding: 2vw 3.5vw;
+  padding: 2vw 3.5vw 0;
   color: black;
   font-family: var(--font);
+  margin-bottom: 1vw;
 }
 
 .color-block {
@@ -212,8 +224,13 @@ p {
     width: 100%;
   }
 
-  h3 {
+  h3,
+  #intro h2 {
     font-size: 5vw;
+  }
+
+  h3 {
+    height: 8vw;
   }
 
   .color-block {
@@ -221,7 +238,8 @@ p {
     height: 6vw;
   }
 
-  p {
+  p,
+  #intro p {
     font-size: 3vw;
   }
 }
