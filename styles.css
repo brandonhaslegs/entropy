@@ -89,7 +89,8 @@
 body {
   cursor: default;
   align-items: center;
-  background: url(assets/bg.gif) no-repeat 0 0 / 99vw, var(--grey);
+  background: url(assets/bg.gif) no-repeat top / 99vw,
+    url(assets/bg.gif) no-repeat bottom / 99vw, var(--grey);
   display: flex;
   flex-direction: column;
   font-family: var(--font);
@@ -206,7 +207,7 @@ p {
   padding: 5vw;
   color: var(--grey);
   animation: rotate 5s infinite linear;
-  margin: 5vw;
+  margin: 8vw;
 }
 
 .rotating-quote p {
