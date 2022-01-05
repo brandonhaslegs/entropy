@@ -1,3 +1,24 @@
+@font-face {
+  font-family: "Euclid Circular B Regular";
+  src: url(assets/euclidCircularBBold.woff) format("woff");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Euclid Circular B Regular";
+  src: url(assets/euclidCircularBMedium.woff) format("woff");
+  font-weight: normal;
+}
+
+::-moz-selection {
+  background: rgba(244, 115, 246, 0.5);
+  color: black;
+}
+::selection {
+  background: rgba(244, 115, 246, 0.5);
+  color: black;
+}
+
 :root {
   --shadow-reverse: -0.05vw -0.05vw rgb(242, 113, 244),
     -0.1vw -0.1vw rgb(1, -128, 3), -0.15vw -0.15vw rgb(6, -123, 8),
@@ -60,43 +81,15 @@
     2.1vw 2.1vw black, 2.15vw 2.15vw black, 2.2vw 2.2vw black;
   --pink: #f473f6;
   --grey: #e5e5e5;
-  --font: "DMSans", sans-serif;
-  --logo-font: EuclidCircularB-Bold-WebTrial, "DM Sans", sans-serif;
+  --font: "Euclid Circular B Regular", sans-serif;
   --border-radius: 5vw;
   --text-shadow-animation: textShadowBounce 15s infinite;
-}
-
-@font-face {
-  font-family: EuclidCircularB-Bold-WebTrial;
-  src: url(assets/EuclidCircularB-Bold-WebTrial.woff) format("woff");
-}
-
-@font-face {
-  font-family: DMSans;
-  src: url(assets/DMSans-Medium.woff) format("woff");
-}
-
-::-moz-selection {
-  background: rgba(244, 115, 246, 0.5);
-  color: black;
-}
-::selection {
-  background: rgba(244, 115, 246, 0.5);
-  color: black;
 }
 
 body {
   cursor: default;
   align-items: center;
-  background: /*linear-gradient(
-      0deg,
-      rgba(229, 229, 229, 0) 0%,
-      rgba(229, 229, 229, 1) 33%,
-      rgba(229, 229, 229, 1) 66%,
-      rgba(229, 229, 229, 0) 100%
-    ), */ url(assets/bg.gif)
-      no-repeat 0 0 / 100%,
-    var(--grey);
+  background: url(assets/bg.gif) no-repeat 0 0 / 99vw, var(--grey);
   display: flex;
   flex-direction: column;
   font-family: var(--font);
@@ -108,7 +101,7 @@ body {
 h1 {
   color: var(--pink);
   margin: 3vw 0 4vw 0;
-  font-family: var(--logo-font);
+  font-family: var(--font);
   font-size: 20vw;
   text-shadow: var(--black-shadow);
   line-height: 15vw;
@@ -136,12 +129,12 @@ h1 {
 
 h2 {
   font-size: 3.5vw;
-  font-family: var(--logo-font);
+  font-family: var(--font);
 }
 
 h3 {
   font-size: 2vw;
-  font-family: var(--logo-font);
+  font-family: var(--font);
   margin: 0;
 }
 
@@ -160,17 +153,21 @@ p {
 
 #container {
   width: 80vw;
-  border-radius: var(--border-radius);
+  /* border-radius: var(--border-radius); */
   display: flex;
+  flex-wrap: wrap;
 }
 
 .block {
+  width: 31.3%;
+  padding: 0 1%;
+  display: inline-block;
 }
 
 .tagline {
   padding: 2vw 3.5vw;
   color: black;
-  font-family: var(--logo-font);
+  font-family: var(--font);
 }
 
 .color-block {
@@ -201,7 +198,7 @@ p {
 }
 
 .rotating-quote p {
-  font-family: var(--logo-font);
+  font-family: var(--font);
   margin: 0;
 }
 
