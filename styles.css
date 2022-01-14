@@ -127,6 +127,11 @@ h1 {
 h2 {
   font-size: 3.5vw;
   font-family: var(--font);
+  margin-top: 10vw;
+}
+
+#intro h2 {
+  margin-top: 2vw;
 }
 
 h3 {
