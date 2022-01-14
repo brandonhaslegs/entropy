@@ -140,6 +140,11 @@ h3 {
   height: 4vw;
 }
 
+h4 {
+  font-size: 1vw;
+  color: var(--pink);
+}
+
 .small {
   font-size: 1vw;
   letter-spacing: 0.1vw;
@@ -153,10 +158,14 @@ p {
   margin: 1vw 0 2vw;
 }
 
-#container {
+.container {
   width: 80vw;
   display: flex;
   flex-wrap: wrap;
+}
+
+.container.end {
+  margin-bottom: 5vw;
 }
 
 #intro {
@@ -174,6 +183,11 @@ p {
   padding: 1% 1%;
   margin-top: 2vw;
   display: inline-block;
+}
+
+.block img {
+  width: 60%;
+  height: auto;
 }
 
 .tagline {
@@ -216,7 +230,7 @@ p {
 }
 
 @media screen and (max-width: 600px) {
-  #container {
+  .container {
     width: 90vw;
     flex-direction: column;
   }
@@ -225,8 +239,17 @@ p {
     width: 100%;
   }
 
+  .container.end {
+    flex-direction: row;
+  }
+
+  .container.end .block {
+    width: 30%;
+  }
+
   h3,
-  #intro h2 {
+  #intro h2,
+  h2 {
     font-size: 5vw;
   }
 
